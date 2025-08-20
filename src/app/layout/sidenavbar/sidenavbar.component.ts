@@ -5,9 +5,10 @@ import { TopbarComponent } from '../topbar/topbar.component';
 import { RippleGlobalOptions } from '@angular/material/core';
 
 @Component({
-  selector: 'app-sidenavbar',
-  templateUrl: './sidenavbar.component.html',
-  styleUrls: ['./sidenavbar.component.scss'],
+    selector: 'app-sidenavbar',
+    templateUrl: './sidenavbar.component.html',
+    styleUrls: ['./sidenavbar.component.scss'],
+    standalone: false
 })
 export class SidenavbarComponent   {
 

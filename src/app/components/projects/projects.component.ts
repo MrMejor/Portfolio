@@ -3,9 +3,10 @@ import { Tools } from 'src/app/models/tools';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'],
+    selector: 'app-projects',
+    templateUrl: './projects.component.html',
+    styleUrls: ['./projects.component.scss'],
+    standalone: false
 })
 export class ProjectsComponent {
   firstPoject: Tools[] = [

@@ -2,7 +2,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[Responsive]'
+    selector: '[Responsive]',
+    standalone: false
 })
 export class ResponsiveDirective {
   constructor(
