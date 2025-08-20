@@ -1,2 +1,4 @@
-<app-sidenavbar *ngIf="!isConfirmationRoute"> </app-sidenavbar>
+@if (!isConfirmationRoute) {
+  <app-sidenavbar> </app-sidenavbar>
+}
 <router-outlet></router-outlet>

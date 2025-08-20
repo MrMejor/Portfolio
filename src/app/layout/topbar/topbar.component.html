@@ -8,7 +8,7 @@
           data-aos-easing="ease-in"
           data-aos-duration="1000"
           data-aos-delay="300"
-        >
+          >
           <div class="img-circle">
             <span></span>
             <span></span>
@@ -21,26 +21,29 @@
       </div>
 
       <span class="spacer"></span>
-      <div class="navItems" *ngIf="!isMobile">
-        <ul>
-          <li><a style="--i: 1" href="#home" (click)="setActive('home')">Home</a></li>
-          <li><a style="--i: 2" href="#about" (click)="setActive('about')">About</a></li>
-          <li><a style="--i: 3" href="#projects" (click)="setActive('projects')">Projects</a></li>
-          <li><a style="--i: 4" href="#contact" (click)="setActive('contact')">Contact</a></li>
-        </ul>
-      </div>
+      @if (!isMobile) {
+        <div class="navItems">
+          <ul>
+            <li><a style="--i: 1" href="#home" (click)="setActive('home')">Home</a></li>
+            <li><a style="--i: 2" href="#about" (click)="setActive('about')">About</a></li>
+            <li><a style="--i: 3" href="#projects" (click)="setActive('projects')">Projects</a></li>
+            <li><a style="--i: 4" href="#contact" (click)="setActive('contact')">Contact</a></li>
+          </ul>
+        </div>
+      }
 
 
-      <div
-        id="humMenu"
-        (click)="toggleSidenav()"
-        [class.openMenu]="isMenuOpen"
-        *ngIf="isMobile"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      @if (isMobile) {
+        <div
+          id="humMenu"
+          (click)="toggleSidenav()"
+          [class.openMenu]="isMenuOpen"
+          >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      }
     </mat-toolbar>
   </div>
 </div>

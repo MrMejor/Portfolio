@@ -1,31 +1,33 @@
 <div class="container">
   <div class="homeContainer">
-    <div class="socialIcons" *ngIf="isMobile">
-      <div class="button fbBtn">
-        <div class="icon">
-          <i class="bx bxl-facebook" (click)="redirectToFB()"></i>
+    @if (isMobile) {
+      <div class="socialIcons">
+        <div class="button fbBtn">
+          <div class="icon">
+            <i class="bx bxl-facebook" (click)="redirectToFB()"></i>
+          </div>
+          <span>Facebook</span>
         </div>
-        <span>Facebook</span>
-      </div>
-      <div class="button linBtn">
-        <div class="icon" (click)="redirectToLinkdin()">
-          <i class="bx bxl-linkedin"></i>
+        <div class="button linBtn">
+          <div class="icon" (click)="redirectToLinkdin()">
+            <i class="bx bxl-linkedin"></i>
+          </div>
+          <span>Linkedin</span>
         </div>
-        <span>Linkedin</span>
-      </div>
-      <div class="button instaBtn">
-        <div class="icon">
-          <i class="bx bxl-instagram-alt" (click)="redirectToInsta()"></i>
+        <div class="button instaBtn">
+          <div class="icon">
+            <i class="bx bxl-instagram-alt" (click)="redirectToInsta()"></i>
+          </div>
+          <span>Instagram</span>
         </div>
-        <span>Instagram</span>
-      </div>
-      <div class="button gitBtn">
-        <div class="icon">
-          <i class="bx bxl-github" (click)="redirectToGithub()"></i>
+        <div class="button gitBtn">
+          <div class="icon">
+            <i class="bx bxl-github" (click)="redirectToGithub()"></i>
+          </div>
+          <span>Github</span>
         </div>
-        <span>Github</span>
       </div>
-    </div>
+    }
     <div class="homeContent">
       <h1
         class="name"
@@ -35,7 +37,7 @@
         data-aos-easing="ease forwards"
         data-aos-offset="100"
         data-aos-once="true"
-      >
+        >
         Hey, I'm Jashan
       </h1>
       <div class="info">
@@ -50,9 +52,11 @@
         <button (click)="redirectToProject()"><span></span> Projects</button>
       </div>
     </div>
-    <div class="email" *ngIf="isMobile">
-      <a href="mailto:jondoa@gmail.com">jashanjeet2001&#64;gmail.com</a>
-    </div>
+    @if (isMobile) {
+      <div class="email">
+        <a href="mailto:jondoa@gmail.com">jashanjeet2001&#64;gmail.com</a>
+      </div>
+    }
     <div class="scrollDown" (click)="redirectToAbout()">
       <span></span>
       <span></span>

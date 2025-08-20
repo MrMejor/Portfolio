@@ -10,170 +10,176 @@
         data-aos-offset="100"
         data-aos-once="true"
         >Projects</span
-      >
-      <span
-        class="headingSub"
-        data-aos="fade-up"
-        data-aos-delay="150"
-        data-aos-duration="1000"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        Here you will find some of the personal and clients projects on that i
-        worked with their source code and live link.
-      </span>
-    </h2>
+        >
+        <span
+          class="headingSub"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          Here you will find some of the personal and clients projects on that i
+          worked with their source code and live link.
+        </span>
+      </h2>
 
-    <app-project-items Responsive>
-      <img
-        src="../../../assets/projects/project.png"
-        alt="Software Screenshot"
-        class="projectsRowImg"
-        loading="lazy"
-      />
-      <h3
-        class="projectsRowContentTitle"
-        data-aos="fade-down-left"
-        data-aos-delay="120"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        Project One
-      </h3>
-      <p
-        class="projectsRowContentDesc"
-        data-aos="fade-left"
-        data-aos-delay="150"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem error
-        illo ipsa repellat pariatur iure, sunt veritatis ab nesciunt aperiam
-        temporibus distinctio ipsum a neque.
-      </p>
-      <div
-        class="tools"
-        data-aos="zoom-in-left"
-        data-aos-delay="190"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        <div class="toolsName" *ngFor="let tools of firstPoject">
-          {{ tools.name | uppercase }}
+      <app-project-items Responsive>
+        <img
+          src="../../../assets/projects/project.png"
+          alt="Software Screenshot"
+          class="projectsRowImg"
+          loading="lazy"
+          />
+        <h3
+          class="projectsRowContentTitle"
+          data-aos="fade-down-left"
+          data-aos-delay="120"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          Project One
+        </h3>
+        <p
+          class="projectsRowContentDesc"
+          data-aos="fade-left"
+          data-aos-delay="150"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem error
+          illo ipsa repellat pariatur iure, sunt veritatis ab nesciunt aperiam
+          temporibus distinctio ipsum a neque.
+        </p>
+        <div
+          class="tools"
+          data-aos="zoom-in-left"
+          data-aos-delay="190"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          @for (tools of firstPoject; track tools) {
+            <div class="toolsName">
+              {{ tools.name | uppercase }}
+            </div>
+          }
         </div>
-      </div>
-      <button mat-raised-button class="livBtn" (click)="projectOne()">
-        Live Link
-      </button>
-    </app-project-items>
+        <button mat-raised-button class="livBtn" (click)="projectOne()">
+          Live Link
+        </button>
+      </app-project-items>
 
-    <app-project-items Responsive>
-      <img
-        src="../../../assets/projects/project.png"
-        alt="Software Screenshot"
-        class="projectsRowImg"
-        loading="lazy"
-      />
-      <h3
-        class="projectsRowContentTitle"
-        data-aos="fade-down-left"
-        data-aos-delay="120"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        Project Two
-      </h3>
-      <p
-        class="projectsRowContentDesc"
-        data-aos="fade-left"
-        data-aos-delay="150"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dicta
-        obcaecati maxime ipsa labore minima aliquid sapiente ex odit inventore
-        minus, quisquam quis numquam incidunt dolore corrupti! Accusamus, sit
-        at.
-      </p>
-      <div
-        class="tools"
-        data-aos="zoom-in-left"
-        data-aos-delay="190"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        <div class="toolsName" *ngFor="let tools of secoundProject">
-          {{ tools.name | uppercase }}
+      <app-project-items Responsive>
+        <img
+          src="../../../assets/projects/project.png"
+          alt="Software Screenshot"
+          class="projectsRowImg"
+          loading="lazy"
+          />
+        <h3
+          class="projectsRowContentTitle"
+          data-aos="fade-down-left"
+          data-aos-delay="120"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          Project Two
+        </h3>
+        <p
+          class="projectsRowContentDesc"
+          data-aos="fade-left"
+          data-aos-delay="150"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dicta
+          obcaecati maxime ipsa labore minima aliquid sapiente ex odit inventore
+          minus, quisquam quis numquam incidunt dolore corrupti! Accusamus, sit
+          at.
+        </p>
+        <div
+          class="tools"
+          data-aos="zoom-in-left"
+          data-aos-delay="190"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          @for (tools of secoundProject; track tools) {
+            <div class="toolsName">
+              {{ tools.name | uppercase }}
+            </div>
+          }
         </div>
-      </div>
-      <button mat-raised-button class="livBtn" (click)="projectTwo()">
-        Live Link
-      </button>
-    </app-project-items>
+        <button mat-raised-button class="livBtn" (click)="projectTwo()">
+          Live Link
+        </button>
+      </app-project-items>
 
-    <app-project-items Responsive>
-      <img
-        src="../../../assets/projects/project.png"
-        alt="Software Screenshot"
-        class="projectsRowImg"
-        loading="lazy"
-      />
-      <h3
-        class="projectsRowContentTitle"
-        data-aos="fade-down-left"
-        data-aos-delay="120"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        Project Three
-      </h3>
-      <p
-        class="projectsRowContentDesc"
-        data-aos="fade-left"
-        data-aos-delay="150"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        numquam possimus blanditiis odit nulla, odio eos non unde ipsum incidunt
-        quam accusantium consequuntur repudiandae recusandae eius magni ipsam
-        nisi deleniti!
-      </p>
-      <div
-        class="tools"
-        data-aos="zoom-in-left"
-        data-aos-delay="190"
-        data-aos-duration="500"
-        data-aos-easing="ease forwards"
-        data-aos-offset="100"
-        data-aos-once="true"
-      >
-        <div class="toolsName" *ngFor="let tools of thirdProject">
-          {{ tools.name | uppercase }}
+      <app-project-items Responsive>
+        <img
+          src="../../../assets/projects/project.png"
+          alt="Software Screenshot"
+          class="projectsRowImg"
+          loading="lazy"
+          />
+        <h3
+          class="projectsRowContentTitle"
+          data-aos="fade-down-left"
+          data-aos-delay="120"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          Project Three
+        </h3>
+        <p
+          class="projectsRowContentDesc"
+          data-aos="fade-left"
+          data-aos-delay="150"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+          numquam possimus blanditiis odit nulla, odio eos non unde ipsum incidunt
+          quam accusantium consequuntur repudiandae recusandae eius magni ipsam
+          nisi deleniti!
+        </p>
+        <div
+          class="tools"
+          data-aos="zoom-in-left"
+          data-aos-delay="190"
+          data-aos-duration="500"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+          >
+          @for (tools of thirdProject; track tools) {
+            <div class="toolsName">
+              {{ tools.name | uppercase }}
+            </div>
+          }
         </div>
-      </div>
-      <button mat-raised-button class="livBtn" (click)="projectThree()">
-        Live Link
-      </button>
-    </app-project-items>
+        <button mat-raised-button class="livBtn" (click)="projectThree()">
+          Live Link
+        </button>
+      </app-project-items>
 
 
+    </div>
   </div>
-</div>
